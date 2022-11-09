@@ -102,9 +102,12 @@ Haryana
 Ques.6 Complete the function in the editor. In which you are given an object and a digit N as a parameter.In the object there are two variable id and houseno are defined as a data member. You have to multiply both the data members with a given digit N.
 Ans.
 function Check(a,obj1) {
-    Math.Check(a);
-    Math.imul(a, obj1);
-   }
+
+ obj1.id=obj1.id*a;
+ obj1.houseno=obj1.houseno*a;
+ return obj1;
+
+}
    Sample Input
    2
    12
@@ -142,16 +145,17 @@ Sample Output
 Ques.8 Complete the function in the editor. In which you are given an object as a parameter. That object contains two variables name and id.
 Your task is to compare the object name and id to the new_name and new_id given there as a parameter
 Ans.function check(obj1,a,b) {
-    if (Object.keys(obj1)=== Object.keys(obj1)) 
-   { 
-     return "true";
-     
-   } 
-   else {
-     return "false"; 
-     
-   }
+     if (Obj1.name === a && Obj1.id === b) 
+    { 
+      return "true";
+    } 
+    else
+    {
+      return "false"; 
+      
+    }
 }
+    
 
 Sample Input
 Utkarsh 
